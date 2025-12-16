@@ -87,7 +87,14 @@
     - if: exists(LHeelBack)
       then: LHeelBack
       else: LAnkle
-
+- parameter: Dummy_MinusOne
+  where:
+    name: ^(Gait|Run|Walk)*
+  steps:
+    - import: Right Ankle Angles_Velocity@RTO
+    - multiply: [$prev,0]   # maak 0
+    - multiply: [$prev,-1]  # vermenigvuldig met -1 → altijd -1
+    
 - parameter: LHeelBack_vel
   set: left
   where:
@@ -1882,11 +1889,5 @@
   steps:
     - import: Right GRF@Right_peak_concentric_GRF
 
-- parameter: Dummy_MinusOne
-  where:
-    name: ^(Gait|Run|Walk)*
-  steps:
-    - import: Right Ankle Angles_Velocity@RTO
-    - multiply: [$prev,0]   # maak 0
-    - multiply: [$prev,-1]  # vermenigvuldig met -1 → altijd -1
+
 

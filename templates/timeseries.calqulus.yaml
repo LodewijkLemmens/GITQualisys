@@ -67,6 +67,10 @@
     - import: [50]
 
 # --- Pelvis ---
+- parameter: Dummy_MinusOne
+  steps:
+    - import: Right Ankle Angles_Velocity@RTO
+    - multiply: [$prev, 0]
 
 - parameter: Left Pelvic Angles
   set: left
