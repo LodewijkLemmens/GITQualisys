@@ -1,0 +1,26 @@
+{
+	"ci": "main",
+	"current": {
+		"engine": "main",
+		"steps": "main",
+		"toolbelt": "main"
+	},
+	"reference": {
+		"engine": "1955ee4b47749ce3dbc80993d2bd7c04c3d6c60c",
+		"pipelines": {
+			"baseballPitching": null,
+			"cricketBatting": null,
+			"cricketBowling": null,
+			"cycling": null,
+			"default": "5e829e5f5c135452f78045669d4b5dd977c00619",
+      "functionalAssessment": null,
+			"generic": null,
+			"running": null
+		},
+		"toolbelt": "313377b592877a6ac2aafe1ad5d2662eb986c29f"
+	},
+	"lastSuccessful": {
+		"engine": "main",
+		"toolbelt": "main"
+	}
+}
